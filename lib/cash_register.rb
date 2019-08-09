@@ -32,4 +32,4 @@ class CashRegister
     
 end
 
-cash_register = CashRegister.new
+cash_register = CashRegister.new(20)
