@@ -13,7 +13,7 @@ class CashRegister
     return @total
   end
   
-  def add_item(title, price, quant)
+  def add_item(title, price, quant=0)
     # @prevTotal = @total
     @total += price
     # @items.push(title)
