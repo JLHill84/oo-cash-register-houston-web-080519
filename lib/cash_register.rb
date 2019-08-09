@@ -23,10 +23,6 @@ class CashRegister
     # @items.push(title)
   end
   
-  # def apply_discount
-  #   @total = (@total * @discount)
-  # end
-  
   def void_last_transaction(lastItemCost)
     @total -+ lastItemCost
   end
