@@ -13,14 +13,14 @@ class CashRegister
     return @total
   end
   
-  def apply_discount
-    @total -= (@total * @discount)/100
-  end
-  
   def add_item(title, price)
     # @prevTotal = @total
     @total += price
     # @items.push(title)
+  end
+  
+  def apply_discount
+    @total -= (@total * @discount)/100
   end
   
   def void_last_transaction(lastItemCost)
